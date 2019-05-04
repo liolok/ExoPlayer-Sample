@@ -15,7 +15,7 @@ class SplashActivity : AppCompatActivity() {
 
         Handler().postDelayed({
             startActivity(Intent(this, ListActivity::class.java))
-            finish(); overridePendingTransition(anim.fade_in, anim.fade_out)  // fade to list activity
-        }, DELAY_MILLIS)
+            finish(); overridePendingTransition(anim.fade_in, anim.fade_out)  // use fade animation
+        }, DELAY_MILLIS)  // jump to list activity after delay
     }
 }

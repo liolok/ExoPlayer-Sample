@@ -13,5 +13,4 @@
         android:text="@string/splash_word"
         android:textSize="@dimen/splash_word_size"
         android:textStyle="bold|italic" />
-
 </RelativeLayout>
