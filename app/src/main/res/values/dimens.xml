@@ -2,4 +2,7 @@
 <resources>
     <dimen name="splash_word_padding">50dp</dimen>
     <dimen name="splash_word_size">18sp</dimen>
+    <dimen name="list_item_card_margin">8dp</dimen>
+    <dimen name="list_item_title_padding">8dp</dimen>
+    <dimen name="list_item_title_size">14sp</dimen>
 </resources>
