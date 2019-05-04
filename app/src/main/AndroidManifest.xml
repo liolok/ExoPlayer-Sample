@@ -21,6 +21,11 @@
         <activity
             android:name=".ListActivity"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".DetailActivity"
+            android:theme="@style/DetailTheme"
+            android:parentActivityName=".ListActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
