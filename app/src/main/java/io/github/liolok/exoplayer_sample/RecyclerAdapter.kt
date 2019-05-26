@@ -24,14 +24,9 @@ class RecyclerAdapter(private val items: List<Item>) : RecyclerView.Adapter<Recy
     class ItemViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         fun bind(item: Item) = with(itemView) {
             title.text = item.title
-            thumb.setImageResource(
-                resources.getIdentifier("cover_${item.book}", "drawable", context.packageName)
-            )  // get drawable resource id by item's book name value, set thumb image
+            duration.text = item.duration
             setOnClickListener {
-                val intent = Intent(context, DetailActivity::class.java)
-                val options = ActivityOptions  // use shared element transition
-                    .makeSceneTransitionAnimation(context as Activity, thumb as View, thumb.transitionName)
-                context.startActivity(intent.putExtra(Item.EXTRA_KEY, item), options.toBundle())
+                context.startActivity(Intent(context, DetailActivity::class.java).putExtra(Item.EXTRA_KEY, item))
             }  // on item view clicked, start detail activity and pass the item object as extra
         }  // bind an item object to its view
     }

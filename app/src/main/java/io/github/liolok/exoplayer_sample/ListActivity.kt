@@ -8,7 +8,7 @@ import kotlinx.serialization.ImplicitReflectionSerializer
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.parseList
 
-private const val GRID_SPAN_COUNT = 2  // grid layout column count
+private const val GRID_SPAN_COUNT = 1  // grid layout column count, use 1 for list layout
 
 class ListActivity : AppCompatActivity() {
     private val items
@@ -20,7 +20,7 @@ class ListActivity : AppCompatActivity() {
         setContentView(R.layout.activity_list)
 
         recyclerView.apply {
-            setHasFixedSize(true) // use this to improve performance if layout size of RecyclerView doesn't change
+            setHasFixedSize(true)  // use this to improve performance if layout size of RecyclerView doesn't change
             layoutManager = GridLayoutManager(this@ListActivity, GRID_SPAN_COUNT)  // use grid layout
             adapter = RecyclerAdapter(items)  // pass item list to adapter
         }
