@@ -1,4 +1,4 @@
-package io.github.liolok.luxun
+package io.github.liolok.exoplayer_sample
 
 import android.R.anim
 import android.content.Intent

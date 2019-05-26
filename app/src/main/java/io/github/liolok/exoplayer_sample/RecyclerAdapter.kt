@@ -1,4 +1,4 @@
-package io.github.liolok.luxun
+package io.github.liolok.exoplayer_sample
 
 import android.app.Activity
 import android.app.ActivityOptions
