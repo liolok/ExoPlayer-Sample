@@ -9,7 +9,7 @@ apply plugin: 'kotlinx-serialization'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "io.github.liolok.luxun"
+        applicationId "io.github.liolok.exoplay_sample"
         minSdkVersion 21
         targetSdkVersion 28
         versionCode 1
