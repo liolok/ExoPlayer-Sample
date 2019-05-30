@@ -7,10 +7,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:drawableTop="@drawable/ic_signature_of_lu_xun"
+        android:drawableTop="@drawable/ic_cpp_logo"
         android:drawablePadding="@dimen/splash_word_padding"
         android:gravity="center"
-        android:text="@string/splash_word"
+        android:text="@string/app_name"
         android:textSize="@dimen/splash_word_size"
         android:textStyle="bold|italic" />
 </RelativeLayout>
