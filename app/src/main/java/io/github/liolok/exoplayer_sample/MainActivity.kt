@@ -1,4 +1,4 @@
-package io.github.liolok.online_video_player_sample
+package io.github.liolok.exoplayer_sample
 
 import android.content.Intent
 import android.os.Bundle

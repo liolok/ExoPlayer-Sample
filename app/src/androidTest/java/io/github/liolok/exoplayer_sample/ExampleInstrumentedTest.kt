@@ -1,4 +1,4 @@
-package io.github.liolok.online_video_player_sample
+package io.github.liolok.exoplayer_sample
 
 import androidx.test.InstrumentationRegistry
 import androidx.test.runner.AndroidJUnit4
