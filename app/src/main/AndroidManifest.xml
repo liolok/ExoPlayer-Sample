@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="io.github.liolok.exoplayer_sample">
+    package="io.github.liolok.online_video_player_sample">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -13,17 +13,17 @@
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup,GoogleAppIndexingWarning">
         <activity
-            android:name=".SplashActivity"
+            android:name="io.github.liolok.online_video_player_sample.SplashActivity"
             android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
+        <activity android:name="io.github.liolok.online_video_player_sample.MainActivity" />
         <activity
-            android:name=".DetailActivity"
-            android:parentActivityName=".MainActivity" />
+            android:name="io.github.liolok.online_video_player_sample.DetailActivity"
+            android:parentActivityName="io.github.liolok.online_video_player_sample.MainActivity" />
     </application>
 
 </manifest>

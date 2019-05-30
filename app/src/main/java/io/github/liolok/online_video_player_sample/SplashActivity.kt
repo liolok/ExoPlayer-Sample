@@ -1,4 +1,4 @@
-package io.github.liolok.exoplayer_sample
+package io.github.liolok.online_video_player_sample
 
 import android.R.anim
 import android.content.Intent
