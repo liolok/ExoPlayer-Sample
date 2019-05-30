@@ -5,14 +5,14 @@ import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.GridLayoutManager
-import kotlinx.android.synthetic.main.activity_list.*
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.serialization.ImplicitReflectionSerializer
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.parseList
 
 private const val GRID_SPAN_COUNT = 1  // grid layout column count, use 1 for list layout
 
-class ListActivity : AppCompatActivity(), RecyclerAdapter.OnItemClickListener {
+class MainActivity : AppCompatActivity(), RecyclerAdapter.OnItemClickListener {
     private var isDualPane: Boolean = false  // is layout at sw600dp variation or just normal
 
     private val items
@@ -21,19 +21,19 @@ class ListActivity : AppCompatActivity(), RecyclerAdapter.OnItemClickListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_list)
+        setContentView(R.layout.activity_main)
 
         recyclerView.apply {
             setHasFixedSize(true)  // use this to improve performance if layout size of RecyclerView doesn't change
-            layoutManager = GridLayoutManager(this@ListActivity, GRID_SPAN_COUNT)  // use grid layout
-            adapter = RecyclerAdapter(items, this@ListActivity)  // pass item list to adapter
+            layoutManager = GridLayoutManager(this@MainActivity, GRID_SPAN_COUNT)  // use grid layout
+            adapter = RecyclerAdapter(items, this@MainActivity)  // pass item list to adapter
         }
 
         // Determine current layout: https://developer.android.com/training/multiscreen/adaptui#TaskDetermineCurLayout
         val fragmentContainer: View? = findViewById(R.id.fragmentContainer)
         isDualPane = fragmentContainer?.visibility == View.VISIBLE
 
-        // Add a Fragment to the Activity at Runtime, in this case, it's default fragment of ListActivity.
+        // Add a Fragment to the Activity at Runtime, in this case, it's default fragment of MainActivity.
         // https://developer.android.com/training/basics/fragments/fragment-ui#AddAtRuntime
         if (isDualPane) {
             // However, if we're being restored from a previous state,

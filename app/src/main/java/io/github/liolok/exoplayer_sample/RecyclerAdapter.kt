@@ -28,6 +28,6 @@ class RecyclerAdapter(private val items: List<Item>, private val listener: OnIte
     }
 
     interface OnItemClickListener {
-        fun onItemClick(item: Item)  // need to implement in ListActivity
+        fun onItemClick(item: Item)  // need to implement in MainActivity
     }
 }

@@ -21,12 +21,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ListActivity"
+            android:name=".MainActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name=".DetailActivity"
             android:theme="@style/DetailTheme"
-            android:parentActivityName=".ListActivity"
+            android:parentActivityName=".MainActivity"
             android:screenOrientation="portrait" />
     </application>
 

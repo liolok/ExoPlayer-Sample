@@ -8,7 +8,7 @@ class DetailActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail)
 
-        val bundle = Bundle()  // get item object from list activity and put it into bundle
+        val bundle = Bundle()  // get item object from MainActivity and put it into bundle
         bundle.putParcelable(Item.EXTRA_KEY, intent.getParcelableExtra(Item.EXTRA_KEY))
 
         val playerFragment = PlayerFragment()  // pass item object to player fragment through bundle

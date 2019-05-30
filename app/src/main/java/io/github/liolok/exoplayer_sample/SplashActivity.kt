@@ -14,8 +14,8 @@ class SplashActivity : AppCompatActivity() {
         setContentView(R.layout.activity_splash)
 
         Handler().postDelayed({
-            startActivity(Intent(this, ListActivity::class.java))
+            startActivity(Intent(this, MainActivity::class.java))
             finish(); overridePendingTransition(anim.fade_in, anim.fade_out)  // use fade animation
-        }, DELAY_MILLIS)  // jump to list activity after delay
+        }, DELAY_MILLIS)  // jump to MainActivity after delay
     }
 }
