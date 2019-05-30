@@ -20,14 +20,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".MainActivity"
-            android:screenOrientation="portrait" />
+        <activity android:name=".MainActivity" />
         <activity
             android:name=".DetailActivity"
-            android:theme="@style/DetailTheme"
-            android:parentActivityName=".MainActivity"
-            android:screenOrientation="portrait" />
+            android:parentActivityName=".MainActivity" />
     </application>
 
 </manifest>
