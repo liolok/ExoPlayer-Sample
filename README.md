@@ -15,7 +15,7 @@ Handler().postDelayed({
 }, DELAY_MILLIS)  // jump to MainActivity after delay
 ```
 
-> 完整代码详见 [SplashActivity.kt](app\src\main\java\io\github\liolok\exoplayer_sample\SplashActivity.kt)
+> 完整代码详见 [SplashActivity.kt](app/src/main/java/io/github/liolok/exoplayer_sample/SplashActivity.kt)
 
 ## 主页面 | Main Activity
 
@@ -27,11 +27,11 @@ Handler().postDelayed({
 
 ### 双窗格
 
-![主页面 - 双窗格](docs/images/Screenshot_Main_sw600dp_landscape.png "主页面 - 双窗格")
+![主页面 - 双窗格](docs/images/Screenshot_Main_sw600dp.png "主页面 - 双窗格")
 
 ### 双窗格横屏
 
-![主页面 - 双窗格横屏](docs/images/Screenshot_Main_sw600dp.png "主页面 - 双窗格横屏")
+![主页面 - 双窗格横屏](docs/images/Screenshot_Main_sw600dp_landscape.png "主页面 - 双窗格横屏")
 
 ### 核心代码
 
@@ -77,7 +77,7 @@ override fun onItemClick(item: Item) {
 }  // implement RecyclerAdapter.OnItemClickListener
 ```
 
-> 以上片段完整代码详见 [MainActivity.kt](app\src\main\java\io\github\liolok\exoplayer_sample\MainActivity.kt)
+> 以上片段完整代码详见 [MainActivity.kt](app/src/main/java/io/github/liolok/exoplayer_sample/MainActivity.kt)
 
 两种布局公共部分为视频列表，列表使用 `RecyclerView` 实现，条目使用 `CardView` 实现，两者的绑定代码如下：
 
@@ -92,7 +92,7 @@ class ItemViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 }
 ```
 
-> 完整代码详见 [RecyclerAdapter.kt](app\src\main\java\io\github\liolok\exoplayer_sample\RecyclerAdapter.kt)
+> 完整代码详见 [RecyclerAdapter.kt](app/src/main/java/io/github/liolok/exoplayer_sample/RecyclerAdapter.kt)
 
 ## 详情 | Detail Activity
 
@@ -113,7 +113,7 @@ playerFragment.arguments = bundle  // pass item object to player fragment throug
 supportFragmentManager.beginTransaction().add(R.id.detailContainer, playerFragment).commit()  // show fragment
 ```
 
-> 完整代码详见 [DetailActivity.kt](app\src\main\java\io\github\liolok\exoplayer_sample\DetailActivity.kt)
+> 完整代码详见 [DetailActivity.kt](app/src/main/java/io/github/liolok/exoplayer_sample/DetailActivity.kt)
 
 ## 视频播放
 
@@ -152,7 +152,7 @@ class PlayerFragment : Fragment() {
 }
 ```
 
-> 完整代码详见 [PlayerFragment.kt](app\src\main\java\io\github\liolok\exoplayer_sample\PlayerFragment.kt)
+> 完整代码详见 [PlayerFragment.kt](app/src/main/java/io/github/liolok/exoplayer_sample/PlayerFragment.kt)
 
 ## 数据字典
 
